@@ -11,7 +11,7 @@ async function refresh () {
         let msgP = document.createElement("p");
         let dtP = document.createElement("p");
         msgP.innerText = JSON.stringify(posts[i].msg)
-        dtP.innerHTML = JSON.stringify(posts[i].dt)
+        dtP.innerText = JSON.stringify(posts[i].dt)
         dtP.style.fontSize = "0.5em";
         div.appendChild(msgP);
         div.appendChild(dtP);
@@ -48,7 +48,7 @@ function publishPost() {
     let dtP = document.createElement("p");
     msgP.innerText = '"' + newPost.value + '"';
     newPost.value = "";
-    dtP.innerHTML = '"' + datetime + '"';
+    dtP.innerText = '"' + datetime + '"';
     dtP.style.fontSize = "0.5em";
     div.appendChild(msgP);
     div.appendChild(dtP);
